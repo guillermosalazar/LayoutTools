@@ -29,3 +29,4 @@ function extractUrl(input)
     // remove quotes and wrapping url()
     return input.replace(/"/g,"").replace(/url\(|\)$/ig, "");
 }
+
