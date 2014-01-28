@@ -12,8 +12,9 @@ $( "*" ).each(function(){
             statusCode: {
                 404: function(xhr) {
                     element.css("background-image", 'url('+img_fallback+')');
-                    element.click(function(){
+                    element.click(function(event){
                         alert(bkg_img);
+                        return false;
                     });
                 }
             }

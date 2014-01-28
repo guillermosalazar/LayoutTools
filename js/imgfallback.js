@@ -6,8 +6,9 @@ $("img").each(function(){
         var fallback_url = $( this ).data( "fallback" );
         $( this ).unbind("error");
         $( this ).attr( "src", fallback_url+"&text="+absolute_src );
-        $(this).click(function(){
+        $(this).click(function(event){
             alert( src + ' | File upload Dialog... Working on it! lml');
+            return false;
         });
     }
 });
