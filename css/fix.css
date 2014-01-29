@@ -1,0 +1,15 @@
+#dialog-uploadForm{
+    background-color: white;
+    position: relative;
+    z-index: 9999;
+    padding: 30px;
+}
+.ui-widget-overlay { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100% !important; 
+    height: 100% !important; 
+    background: #aaaaaa;
+    opacity: 0.3;
+}
