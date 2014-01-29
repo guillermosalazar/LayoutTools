@@ -24,5 +24,4 @@ $( "#dialog-uploadForm" ).dialog({
     height: 480,
     width: 640,
     modal: true,
-
 });
