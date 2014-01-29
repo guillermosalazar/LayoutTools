@@ -19,22 +19,6 @@ setTimeout(function() {
     });   
 }, 1000);
 
-//Upload dialog
-var html_dialog = '';
-html_dialog += '<div id="dialog-uploadForm">';
-html_dialog += '<div id="image_properties"></div>';
-html_dialog += '<form method="post" enctype="multipart/form-data">';
-html_dialog += "{% csrf_token %}";
-html_dialog += '<p>{{ form.non_field_errors }}</p>';
-html_dialog += '<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>';
-html_dialog += '<p>{{ form.docfile.errors }}{{ form.docfile }}</p>';
-html_dialog += "<p><input type='submit' value='Upload' /></p>";
-html_dialog += "<input type='text' value='' id='location' name='location'>";
-html_dialog += "</form>";
-html_dialog += "</div>";
-
-$('body').prepend( html_dialog );
-
 $( "#dialog-uploadForm" ).dialog({
     autoOpen: false,
     height: 480,
