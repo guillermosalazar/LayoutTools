@@ -1,7 +1,7 @@
 Javasript|JQuery Tools for HTML design/layout
 
 Before </body>:
-```html
+
 <style type="text/css">
     #dialog-uploadForm{
         background-color: white;
@@ -33,17 +33,16 @@ Before </body>:
 </div>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
 <script src="https://rawgithub.com/guillermosalazar/LayoutTools/master/js/imgfallback.js"></script>
-```
+
 
 Image:
-```html
+
 <img src="/path/to/image.jpg" alt="" data-fallback="http://placehold.it/100x100">
-```
+
 
 Background Image:
-```html
+
 .element-with-background-image{
     background-image: url(../img/menu/bg.jpg);
     content: "http://placehold.it/20x55";
 }
-```
