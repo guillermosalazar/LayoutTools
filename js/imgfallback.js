@@ -32,7 +32,7 @@ $( "*" ).each(function(){
     var url = extractUrl(bkg_img);
     var absolute_src = url.replace(host,'');
     var dimensions = img_fallback.replace('http://placehold.it/',"").replace("'","").replace("'","").split("x");
-    if( bkg_img !== "none" )
+    if( bkg_img !== "none" && (img_fallback.indexOf("placehold.it") > -1)  )
     {
         $.ajax({ 
             type: "GET",
